@@ -1,0 +1,262 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* убрать смещение при использовании якорей */
+/* remove the offset when using anchors */
+#ancor2, #ancor3, #ancor4 {
+    padding-top: 84px;
+    margin-top: -84px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+}
+
+#ancor1 {
+    border-top: 168px solid transparent;
+    margin-top: -84px;
+    background-clip: padding-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+/* Header section */
+.header {
+    width: 100%; 
+    background-color: hsl(171, 100%, 23%); 
+    height: 84px;
+    display: flex; 
+    align-items: center; 
+    position: fixed; 
+    top: 0; 
+    z-index: 21; 
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1219px; 
+    margin: 0 auto; 
+    padding: 0 55px;
+} 
+
+.nav-bar {
+    height: 100%; 
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.nav-list {
+    margin: 0;
+    display: flex;
+    list-style: none;
+    color: white;
+}
+
+a, .dash {
+    text-decoration: none;
+    color: white;
+    margin-left: 12px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;  
+}
+
+a:first-child {
+    margin-left: 0;
+}
+
+a:hover {
+    color:hsl(0, 0%, 80%);
+}
+
+/* Main section, section-1 */
+
+.section-1 {
+    display: block;
+    background: url(./Pictures/header_icon.png);  
+    margin-top: 84px; 
+    padding: 160px 0;
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1-title {
+    margin: 0;
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 84px;
+    text-align: center;
+}
+
+/* Main section, section-2 */
+
+/* for each title */
+.title {
+    margin-top: 48px;
+    margin-bottom: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    color: hsl(171, 100%, 23%);
+}
+
+.section-2-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 92px;
+}
+
+.span-section-2 {
+    font-weight: 700;
+}
+
+.section-2-text p:first-child {
+    margin-top: 0;
+}
+
+.section-2-text p:last-child {
+    margin-bottom: 0;
+}
+
+/* Main section, section-3 */
+
+.section-3 {
+    padding: 128px 0;
+    background-image: url(./Pictures/section_2_image.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.section-3-text {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: white;
+}
+
+.section-3-text p {
+    margin: 0;
+}
+
+/* Main section, section-4 */
+
+.section-4-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 92px;
+}
+
+.span-section-4 {
+    font-style: italic;
+}
+
+.logo {
+    float: left;
+    padding-right: 48px;
+}
+
+.section-4-text p:first-child {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.section-4-text p:last-child {
+    margin-bottom: 0;
+}
+
+/* Main section, section-5 */
+
+.section-5 {
+    background-color: hsl(0, 0%, 90%);
+}
+
+.section-5-title {
+    margin: 0;
+    padding-top: 58px;
+    padding-bottom: 32px;
+}
+
+.team-member {
+    padding: 15px;
+    width: 350px;
+    height: 283px;
+    text-align: center; 
+    
+}
+
+.team {
+    padding-bottom: 84px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member img {
+    padding-bottom: 12px;
+}
+
+.team-member p {
+    margin: 0;
+}
+
+.member-name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: hsl(171, 100%, 23%);
+}
+
+.member-position {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+/* Footer */
+
+.footer {
+    background-color: hsl(0, 0%, 20%);
+}
+
+.footer-text {
+    padding-top: 50px;
+    padding-bottom: 62px;
+}
+
+.footer-text p {
+    width: 540px;
+    height: 64px;
+    color: white;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+
